@@ -28,8 +28,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 8%;
-    -webkit-backdrop-filter: blur(50px);
-    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0);
     width: 100%;
     height: 5%;
@@ -91,4 +91,15 @@ nav ul li ul li {
 nav ul li ul li a {
     padding: 10px;
     font-size: 20px;
+}
+
+.login a {
+    background-color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    color: black;
+    border-radius: 20px;
 }
