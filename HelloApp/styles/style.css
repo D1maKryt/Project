@@ -102,4 +102,9 @@ nav ul li ul li a {
     font-size: 25px;
     color: black;
     border-radius: 20px;
+    transition: ease-in-out 0.5s;
+}
+.login a:hover {
+    color: rgb(78, 43, 1);
+    background-color: rgb(255, 212, 133);
 }
