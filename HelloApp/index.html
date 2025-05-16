@@ -20,13 +20,21 @@
                         <li><a href="#">Малышева 124</a></li>
                     </ul>
                 </li>
-                <li><a href="#">О нас</a></li>
+                <li id="open-popup"><a href="#">О нас</a></li>
                 <li><a href="#">Корзина</a></li>
             </ul>
         </nav>
         <button class="login"><a href="#">Вход</a></button>
 
     </header>
+
+    <div id='popup-window' class="popup-window">
+        <div class="popup">
+            <button id="close-popup" class="close-popup">&times;</button>
+            <h2>Тут будет информация о нас дима</h2>
+            <p>это будет поп-ап окно дима</p>
+        </div>
+    </div>
 
     <main class="conteiner">
 
@@ -35,5 +43,26 @@
     <footer>
 
     </footer>
+
+    <script>
+        const openPopup = document.getElementById('open-popup')
+        const closePopup = document.getElementById('close=popup')
+        const popupWindow = document.getElementById('popup-window')
+
+        openPopup.addEventListener('click', () => {
+            overlay.style.dispay = 'flex';
+        });
+
+        popupWindow.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                overlay.style.dispay = 'none';
+            }
+        });
+
+        closePopup.addEventListener('click', () => {
+            overlay.style.dispay = 'none';
+        });
+
+    </script>
 </body>
 </html>
