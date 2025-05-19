@@ -30,7 +30,6 @@
 
     <div id='popup-window' class="popup-window">
         <div class="popup">
-            <button id="close-popup" class="close-popup">&times;</button>
             <h2>Тут будет информация о нас дима</h2>
             <p>это будет поп-ап окно дима</p>
         </div>
@@ -45,22 +44,19 @@
     </footer>
 
     <script>
-        const openPopup = document.getElementById('open-popup')
-        const closePopup = document.getElementById('close=popup')
-        const popupWindow = document.getElementById('popup-window')
 
-        openPopup.addEventListener('click', () => {
-            overlay.style.dispay = 'flex';
+        const openPopup = document.getElementById('open-popup');
+        const popupWindow = document.getElementById('popup-window');
+
+        openPopup.addEventListener('click', (e) => {
+            e.preventDefault();
+            popupWindow.style.display = 'flex';
         });
 
         popupWindow.addEventListener('click', (e) => {
-            if (e.target === overlay) {
-                overlay.style.dispay = 'none';
+            if (e.target === popupWindow) {
+                popupWindow.style.display = 'none';
             }
-        });
-
-        closePopup.addEventListener('click', () => {
-            overlay.style.dispay = 'none';
         });
 
     </script>

@@ -50,7 +50,7 @@ body {
     align-items: center;
 }
 .popup {
-    background: white;
+    background: orange;
     padding: 20px;
     border-radius: 20px;
     position: relative;
