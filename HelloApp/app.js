@@ -1,8 +1,11 @@
-
-const express = require("express");
+const express = require("express"); // получаем модуль express
+// создаем приложение express
 const app = express();
-app.get("/", function(request, response){
-       
-    response.send("test start !");
+ 
+// устанавливаем обработчик для маршрута "/"
+app.get("/", function(_, response){
+ 
+    response.end("Hello METANIT.COM");
 });
-app.listen(3000);
+// начинаем прослушивание подключений на 3000 порту
+app.listen(3000, function(){ console.log("Сервер начал принимать запросы по адресу http://localhost:3000")});
