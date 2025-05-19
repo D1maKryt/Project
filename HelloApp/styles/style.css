@@ -50,7 +50,7 @@ body {
     align-items: center;
 }
 .popup {
-    background: orange;
+    background: #FF6900;
     padding: 20px;
     border-radius: 20px;
     position: relative;
@@ -94,7 +94,7 @@ header {
 }
 
 .logo:hover {
-    color: orange;
+    color: #FF6900;
 }
 
 header nav ul {
@@ -115,7 +115,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: orange;
+    color: #FF6900;
 }
 
 
@@ -143,7 +143,7 @@ nav ul li ul li a {
 }
 
 .login a {
-    background-color: orange;
+    background-color: #FF6900;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
@@ -154,8 +154,7 @@ nav ul li ul li a {
     transition: ease-in-out 0.5s;
 }
 .login a:hover {
-    color: rgb(78, 43, 1);
-    background-color: rgb(255, 212, 133);
+    background-color: darkorange;
 }
 
 /* HEADER */
