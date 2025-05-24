@@ -10,32 +10,87 @@
 <body>
     <header>
 
-        <a href="#" class="logo">Pi<span style="color: black; font-family: TS;">zz</span>aF<span style="color: black; font-family: TS;">oo</span>d</a>
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Адрес</a>
-                    <ul>
-                        <li><a href="#">Ленина 3а</a></li>
-                        <li><a href="#">Малышева 124</a></li>
-                    </ul>
-                </li>
-                <li id="open-popup"><a href="#">О нас</a></li>
-                <li><a href="#">Корзина</a></li>
-            </ul>
-        </nav>
-        <button class="login"><a href="#">Вход</a></button>
+        <p class="logo">Habitz</p>
 
     </header>
 
-    <div id='popup-window' class="popup-window">
-        <div class="popup">
-            <h2>Тут будет информация о нас дима</h2>
-            <p>это будет поп-ап окно дима</p>
-        </div>
-    </div>
+    <main>
 
-    <main class="conteiner">
+        <div class="content-info">
+            <div class="content-info-1">
+                <div class="info-1">
+                    <p><span style="font-family: TS; font-size: 64px;">Habitz</span> - быстрый ремонт устройств Apple</p>
+                </div>
+                <div class="info-2">
+                    <p><span style="font-family: sf-pro-black; font-size: 64px;">Время ожидания:</span> от 20 минут</p>
+                </div>
+            </div>
+            <div class="content-info-2">
+                <div class="text-original">
+                    <p>original</p>
+                </div>
+                <div class="info-3">
+                    <div class="text-info">
+                        <p><span style="font-family: sf-pro-black; font-size: 64px;">Цены от:</span></p>
+                        <p>500 ₽</p>
+                        <button>посмотреть наши услуги</button>
+                    </div>
+            </div>
+            <div class="info-4">
+                <p><span style="font-family: sf-pro-black; font-size: 64px;">Бесплатная</span> диагностика</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="applications-form">
+
+                <section class="form-section">
+                    <p style="font-family: sf-pro-black; font-size: 64px;"> Оставить заявку</p>
+                    <div class="form-container">
+                        <p style="font-family: sf-pro-bold; font-size: 32px; margin-bottom: 20px;">Заявка на ремонт Apple-устройства</p>
+                        <form>
+                        <div class="form-group">
+                            <label>ФИО</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Тип устройства</label>
+                            <select name="device-type" required>
+                            <option value="">Выберите устройство</option>
+                            <option value="iPhone">iPhone</option>
+                            <option value="iPad">iPad</option>
+                            <option value="MacBook">MacBook</option>
+                            <option value="iMac">iMac</option>
+                            <option value="Другое">Другое</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Модель (например, iPhone 13 Pro)</label>
+                            <input type="text" name="model">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Описание проблемы</label>
+                            <textarea name="issue"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Номер телефона</label>
+                            <input type="tel" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email (необязательно)</label>
+                            <input type="email" name="email">
+                        </div>
+
+                        <button type="submit" class="submit-btn">Оставить заявку</button>
+                        </form>
+                    </div>
+                </section>
+        </div>
 
     </main>
 
