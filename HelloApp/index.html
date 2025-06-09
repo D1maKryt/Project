@@ -1,119 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/font.css">
-    <title>Проект</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/font.css">
+  <title>HABITZ — Ремонт Apple</title>
 </head>
 <body>
-    <header>
+  <header>
+    <div style="font-size: 24px; font-weight: bold; font-family: TS; color: #A78BFA;">HABITZ</div>
+    <nav>
+      <a href="#">Услуги и Цены</a>
+      <a href="#">Контакты</a>
+      <a href="order.html"<button class="btn-black">Оставить заявку на ремонт</button></a>
+    </nav>
+  </header>
 
-        <p class="logo">Habitz</p>
+  <section class="hero">
+    <h1>Быстрый ремонт устройств Apple</h1>
+    <p>от 500 ₽ · от 20 минут · бесплатная диагностика</p>
+    <button class="btn-black">Посмотреть услуги</button>
+  </section>
 
-    </header>
+  <section class="grid">
+    <div class="card">
+      <h3>Бесплатная диагностика</h3>
+      <p>Определим проблему до начала работ.</p>
+    </div>
+    <div class="card">
+      <h3>Цены от 500 ₽</h3>
+      <p>Прозрачные и честные цены без скрытых платежей.</p>
+    </div>
+    <div class="card">
+      <h3>От 20 минут</h3>
+      <p>Срочный ремонт при вас в течение часа.</p>
+    </div>
+  </section>
 
-    <main>
-
-        <div class="content-info">
-            <div class="content-info-1">
-                <div class="info-1">
-                    <p><span style="font-family: TS; font-size: 64px;">Habitz</span> - быстрый ремонт устройств Apple</p>
-                </div>
-                <div class="info-2">
-                    <p><span style="font-family: sf-pro-black; font-size: 64px;">Время ожидания:</span> от 20 минут</p>
-                </div>
-            </div>
-            <div class="content-info-2">
-                <div class="text-original">
-                    <p>original</p>
-                </div>
-                <div class="info-3">
-                    <div class="text-info">
-                        <p><span style="font-family: sf-pro-black; font-size: 64px;">Цены от:</span></p>
-                        <p>500 ₽</p>
-                        <button>посмотреть наши услуги</button>
-                    </div>
-            </div>
-            <div class="info-4">
-                <p><span style="font-family: sf-pro-black; font-size: 64px;">Бесплатная</span> диагностика</p>
-            </div>
-            </div>
-        </div>
-
-        <div class="applications-form">
-
-                <section class="form-section">
-                    <p style="font-family: sf-pro-black; font-size: 64px;"> Оставить заявку</p>
-                    <div class="form-container">
-                        <p style="font-family: sf-pro-bold; font-size: 32px; margin-bottom: 20px;">Заявка на ремонт Apple-устройства</p>
-                        <form>
-                        <div class="form-group">
-                            <label>ФИО</label>
-                            <input type="text" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Тип устройства</label>
-                            <select name="device-type" required>
-                            <option value="">Выберите устройство</option>
-                            <option value="iPhone">iPhone</option>
-                            <option value="iPad">iPad</option>
-                            <option value="MacBook">MacBook</option>
-                            <option value="iMac">iMac</option>
-                            <option value="Другое">Другое</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Модель (например, iPhone 13 Pro)</label>
-                            <input type="text" name="model">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Описание проблемы</label>
-                            <textarea name="issue"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Номер телефона</label>
-                            <input type="tel" name="phone" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Email (необязательно)</label>
-                            <input type="email" name="email">
-                        </div>
-
-                        <button type="submit" class="submit-btn">Оставить заявку</button>
-                        </form>
-                    </div>
-                </section>
-        </div>
-
-    </main>
-
-    <footer>
-
-    </footer>
-
-    <script>
-
-        const openPopup = document.getElementById('open-popup');
-        const popupWindow = document.getElementById('popup-window');
-
-        openPopup.addEventListener('click', (e) => {
-            e.preventDefault();
-            popupWindow.style.display = 'flex';
-        });
-
-        popupWindow.addEventListener('click', (e) => {
-            if (e.target === popupWindow) {
-                popupWindow.style.display = 'none';
-            }
-        });
-
-    </script>
+  <footer>
+    © 2025 HABITZ. Все права защищены.
+  </footer>
 </body>
 </html>
